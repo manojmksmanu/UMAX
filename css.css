@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Assistant:wght@200&family=Barlow+Semi+Condensed:wght@200&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@300&family=Fjalla+One&family=Karla:wght@300;500&family=Oswald&family=Pacifico&family=Patrick+Hand&family=Roboto:ital@1&family=Rowdies:wght@700&family=Titillium+Web:ital,wght@0,400;1,200&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Assistant:wght@200&family=Barlow+Semi+Condensed:wght@200&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@300&family=Fjalla+One&family=Karla:wght@300;500&family=Oswald&family=Pacifico&family=Patrick+Hand&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital@1&family=Rowdies:wght@700&family=Titillium+Web:ital,wght@0,400;1,200&family=Yellowtail&display=swap');
+
 
 * {
     padding: 0;
@@ -228,11 +229,13 @@ a:hover {
 }
 
 .extra {
-    margin: 5rem;
+    margin: 10rem;
+    
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
     color: rgb(255, 255, 255);
     text-align: center;
+    padding-bottom:8rem ;
 }
 
 
@@ -323,6 +326,7 @@ a:hover {
     border: 0.2rem solid white;
     border-radius: 1rem;
     text-align: center;
+    padding: 1.8rem;
 }
 
 .contact-mail h1 {
@@ -333,19 +337,21 @@ a:hover {
 }
 
 .contact-mail h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 8rem;
     font-size: 5rem;
 
 }
 
 .contact-mail h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 8rem;
     font-size: 5rem;
 
 }
 
 .contact-mail p {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 8rem;
     font-size: 5rem;
 
@@ -391,6 +397,7 @@ a:hover {
 }
 
 @media(max-width:900px) {
+  
     .about-section {
  display: grid;
         grid-template-columns: 1fr;
@@ -445,6 +452,7 @@ a:hover {
         background-color: aqua;
 
     }
+    
 
     .about-text {
         padding: 5rem;
