@@ -194,9 +194,7 @@ a:hover {
     justify-content: center;
     justify-items: center;
     color: rgb(0, 0, 0);
-
-
-}
+   }
 
 .biglogo {
 
@@ -231,12 +229,12 @@ a:hover {
 .namaste{
     color: white;
     font-size: 10rem;
-    margin-bottom: -10rem;
+    margin-bottom:-10rem;  
     font-family: 'Dancing Script', cursive;
 }
 .extra {
-    margin: 2rem;
-    margin-bottom: 15rem;
+    margin: 4rem;
+    
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
     color: rgb(255, 255, 255);
@@ -248,7 +246,7 @@ a:hover {
 @media(max-width:450px)
 {
     .extra {
-        padding-top: 10rem;
+        padding-top: 15rem;
       font-size: 3.5rem;
     }  
    
@@ -377,6 +375,16 @@ a:hover {
 
 
 /* ******media-fire for responsive */
+/* @media(max-width:1480px){
+    .extra {
+        margin: 10rem;
+        font-size: 6rem;
+       padding-bottom:20rem ;
+        padding-top: 6rem;
+    
+    }
+    
+} */
 @media(max-width:400px) {
     .cc {
         font-size: 4rem;
@@ -492,12 +500,24 @@ a:hover {
         grid-row: 1/2;
     }
 }
+@media(max-width:430px) {
+    .extra{
+        font-size: 0.5rem;
+        margin-bottom: 20rem;
+        margin-top:-10rem ;
+    }
+
+    
+}
 
 @media(max-width:600px) {
-    
-    .namaste{
-        display: none;
+     
+    .extra{
+        font-size: 4rem;
+        margin-bottom: 20rem;
     }
+    
+
     
       .cc {
         font-size: 6rem;
@@ -548,10 +568,10 @@ a:hover {
         grid-template-columns: 1fr 1fr 1fr;
 
     }
-
+   
 }
 
-@media(max-width:900px) {}
+
 
 @media(max-width:800px) {
     .course-section {
@@ -621,14 +641,25 @@ a:hover {
 
     }
 }
-@media(max-width:380px){
+@media(max-width:385px){
     .umax {
         margin-top: -7rem;
         font-size:20rem ;
     }
     .extra {
-        padding-top: 5rem;
+        padding-top: 12rem;
       font-size: 3.5rem;
+    } 
+    
+}
+@media(max-width:280px){
+    .umax {
+        margin-top: -7rem;
+        font-size:20rem ;
+    }
+    .extra {
+        padding-top: 20rem;
+      font-size: 4.5rem;
     } 
     
 }
