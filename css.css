@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Assistant:wght@200&family=Barlow+Semi+Condensed:wght@200&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@300&family=Fjalla+One&family=Karla:wght@300;500&family=Oswald&family=Pacifico&family=Patrick+Hand&family=Roboto:ital@1&family=Rowdies:wght@700&family=Titillium+Web:ital,wght@0,400;1,200&family=Yellowtail&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +10,7 @@
 
 html {
     font-size: 10px;
+    
 }
 
 body {
@@ -15,21 +18,21 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 
-    background: url('images/im.jpg');
+    background:linear-gradient(to left,#000000,#434343), url(https://images.pexels.com/photos/159760/computer-pc-workplace-home-office-159760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+    
 }
 
 /*  %%%%%%%%%%% full responsive header%%%%%%%%%%  */
 nav {
     z-index: 10;
-    background: linear-gradient(#bdc3c7, #2c3e50);
+    background: linear-gradient(to bottom right,#000000,#434343);
     height: 7rem;
     width: 100%;
-
-
-
 }
 
 #navbar {
@@ -178,6 +181,8 @@ a:hover {
 }
 
 
+
+
 /*%%%%%%%%%%intro%%%%%%%*/
 .intro {
     padding-top: 5rem;
@@ -194,27 +199,39 @@ a:hover {
 
 .biglogo {
 
-    border: 2rem solid black;
+   
     font-size: 20rem;
     margin-bottom: 4rem;
 }
 
 .intro-item {
 
-    border: 1rem solid #2c3e50;
+   
 }
 
 .umax {
-    font-size: 15.2rem;
+    padding-top:1rem ;
+    
+    font-size: 30rem;
+    
+   
+    color:white;
+    justify-content: center;
 }
 
 .cc {
-    font-size: 5rem;
+    margin-top: -7rem;
+    font-size: 9rem;
+    color: white;
+    margin-bottom: 3rem;
+    
 }
 
 .extra {
     margin: 5rem;
     font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -224,7 +241,7 @@ a:hover {
 
 
 .about-section {
-    /* height: 80rem; */
+
     background-color: #402aea;
     margin: 2rem;
     margin-top: 10rem;
@@ -242,16 +259,110 @@ a:hover {
 }
 
 .about-text h1 {
+    font-family: 'Alfa Slab One', cursive;
     font-size: 8rem;
 }
-
+.about-text h3{
+    font-family: 'Patrick Hand', cursive;
+}
 .about-text p {
     font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+
+    
 }
 
 .about-img img {
     height: 60rem;
     width: 80rem;
+}
+
+
+
+/* *********COURSES******** */
+
+.course-section {
+
+    background-color: #402aea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.course-item {
+    padding: 5rem;
+    background-color: #1b9bff;
+    margin: 2rem;
+}
+
+
+
+
+/* contact us */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background:linear-gradient( to bottom right ,#4b6cb7,#182848);
+    padding: 4rem;
+    color: white;
+}
+
+.map-iframe {
+    width: 60rem;
+    height: 40rem;
+    background-color: #2193b0;
+}
+
+.contact-mail {
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.contact-mail h1 {
+    font-family: 'Rowdies', cursive;
+    font-size: 6rem;
+    line-height: 8rem;
+
+}
+
+.contact-mail h2 {
+    line-height: 8rem;
+    font-size: 5rem;
+
+}
+
+.contact-mail h3 {
+    line-height: 8rem;
+    font-size: 5rem;
+
+}
+
+.contact-mail p {
+    font-family: 'Patrick Hand', cursive;
+    line-height: 8rem;
+    font-size: 5rem;
+
+}
+
+
+
+
+
+/* ******media-fire for responsive */
+@media(max-width:400px) {
+    .cc {
+        font-size: 4rem;
+    }
+    .umax{
+        font-size:20rem ;
+    }
 }
 
 @media(max-width:1560px) {
@@ -260,13 +371,7 @@ a:hover {
     }
 }
 
-
 @media(max-width:1300px) {
-    .about-section {
-        /* height: 85rem; */
-
-    }
-
     .about-text {
         padding: 6rem;
     }
@@ -287,16 +392,58 @@ a:hover {
 
 @media(max-width:900px) {
     .about-section {
-
-
-
-        
-        display: grid;
+ display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         align-content: center;
         align-items: center;
         justify-items: center;
+    }
+    .contact-mail h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    
+    }
+    
+    .contact-mail h2 {
+        line-height: 6rem;
+        font-size: 4rem;
+    
+    }
+    
+    .contact-mail h3 {
+        line-height: 6rem;
+        font-size: 4rem;
+    
+    }
+    
+    .contact-mail p {
+        line-height: 6rem;
+        font-size: 3rem;
+    
+    }
+    .map-iframe {
+        width: 50rem;
+        height: 40rem;
+        background-color: #2193b0;
+    }
+    .contact-mail {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        
+        border-radius: 1rem;
+        text-align: center;
+    }
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color: aqua;
+
     }
 
     .about-text {
@@ -324,10 +471,21 @@ a:hover {
 }
 
 @media(max-width:600px) {
-
+    
+      .cc {
+        font-size: 6rem;
+    }
+    .umax{
+        padding-top: 5rem;
+        font-size:20rem ;
+    }
     .about-img img {
         height: 30rem;
         width: 40rem;
+    }
+    .contact-section{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .about-section {
@@ -338,11 +496,13 @@ a:hover {
 
     }
 }
-@media(max-width:800px){
+
+@media(max-width:800px) {
     .about-text h1 {
         text-align: center;
         font-size: 8rem;
     }
+
     .about-img img {
         height: 25rem;
         width: 35rem;
@@ -355,9 +515,82 @@ a:hover {
 
 }
 
+@media(max-width:1200px) {
+    .course-section {
+        margin-top: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
 
-/* *********COURSES******** */
+    }
 
-.course-section {
-    border: 2rem solid black;
+}
+
+@media(max-width:900px) {}
+
+@media(max-width:800px) {
+    .course-section {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+@media(max-width:600px) {
+    .course-section {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .course-section {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media(max-width:340px) {
+    .course-section {
+
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media(max-width:1200px) {
+    .course-section {
+        margin-top: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:800px) {
+    .course-section {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+@media(max-width:600px) {
+    .course-section {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .course-section {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media(max-width:340px) {
+    .course-section {
+
+        grid-template-columns: 1fr;
+
+    }
 }
