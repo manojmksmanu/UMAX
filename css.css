@@ -225,19 +225,35 @@ a:hover {
     font-size: 9rem;
     color: white;
     margin-bottom: 3rem;
+   
     
 }
-
+.namaste{
+    color: white;
+    font-size: 10rem;
+    margin-bottom: -10rem;
+    font-family: 'Dancing Script', cursive;
+}
 .extra {
-    margin: 10rem;
-    
+    margin: 2rem;
+    margin-bottom: 15rem;
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
     color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom:8rem ;
-}
+    padding-top: 4rem;
 
+}
+@media(max-width:450px)
+{
+    .extra {
+        padding-top: 10rem;
+      font-size: 3.5rem;
+    }  
+   
+    
+}
 
 
 /* about-section */
@@ -480,6 +496,10 @@ a:hover {
 
 @media(max-width:600px) {
     
+    .namaste{
+        display: none;
+    }
+    
       .cc {
         font-size: 6rem;
     }
@@ -602,3 +622,4 @@ a:hover {
 
     }
 }
+
