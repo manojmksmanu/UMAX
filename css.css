@@ -6,66 +6,72 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
 
 body {
-    display: grid;
-grid-template-columns: 1fr;
 
-    background:url('ss.jpg');
+    display: grid;
+    grid-template-columns: 1fr;
+
+    background: url('images/im.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    }
+}
 
 /*  %%%%%%%%%%% full responsive header%%%%%%%%%%  */
 nav {
     z-index: 10;
-    background: rgb(0, 130, 230,0.8);
-    height: 80px;
+    background: linear-gradient(#bdc3c7, #2c3e50);
+    height: 7rem;
     width: 100%;
-    box-shadow: 10px 10px 10px 10px black;
-    
+
+
 
 }
-#navbar{
+
+#navbar {
     z-index: 10;
 }
-#navbar{
+
+#navbar {
     display: inline-block;
-    top:0.000000001px;
+    top: 0.000000001px;
     position: sticky;
-   
+
 }
 
 
 label.logo {
     font-family: 'Righteous', cursive;
-    margin-left: 50px;
+    margin-left: 5rem;
     color: aliceblue;
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 4rem;
+    line-height: 7rem;
     font-weight: bold;
 }
 
 nav ul {
-   
+
     float: right;
-    margin-right: 40px;
+    margin-right: 4rem;
 
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 7rem;
+    margin: 0 0.5rem;
 
 }
 
 nav ul li a {
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    padding: 7px 20px;
-    border-radius: 3px;
+    font-size: 2.5rem;
+    padding: 0.7rem 2rem;
+    border-radius: 0.3rem;
     font-family: 'Lato', sans-serif;
 
 }
@@ -77,14 +83,14 @@ a:hover {
 }
 
 .checkbtn {
-    font-size: 20px;
+    font-size: 2rem;
     color: aliceblue;
     float: right;
-    line-height: 80px;
-    margin-right: 20px;
+    line-height: 8rem;
+    margin-right: 2rem;
     cursor: pointer;
     display: none;
-   
+
 }
 
 #check {
@@ -94,62 +100,64 @@ a:hover {
 
 @media(max-width: 952px) {
 
-    #navbar{
+    #navbar {
         z-index: 10;
     }
-   
-    nav{
+
+    nav {
         z-index: 10;
     }
+
     label.logo {
-        font-size: 25px;
-        padding-left: 20px;
+        font-size: 2.5rem;
+        padding-left: 2rem;
 
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 2rem;
 
     }
 }
 
 @media(max-width:858px) {
     .checkbtn {
-        
+
         display: block;
     }
-    #navbar{
+
+    #navbar {
         z-index: 10;
     }
-   
-    nav{
+
+    nav {
         z-index: 10;
     }
 
 
     ul {
         z-index: 8;
-       position: fixed;
+        position: fixed;
         width: 100%;
         height: 100%;
         background: #2c3e50;
         top: -100%;
-        left: 0px;
+        left: 0rem;
         transition: all 0.5s;
         text-align: center;
-        
+
     }
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
-      
+        margin: 5rem 0;
+        line-height: 3rem;
+
     }
 
     nav ul li a {
 
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     a:hover {
@@ -158,21 +166,21 @@ a:hover {
     }
 
     #check:checked~ul {
-        top: 80px;
+        top: 7rem;
     }
 }
 
 @media(max-width:400px) {
     label.logo {
-        font-size: 22px;
+        font-size: 2.2rem;
         margin-left: 0px;
     }
 }
 
 
 /*%%%%%%%%%%intro%%%%%%%*/
-.intro{
-    
+.intro {
+    padding-top: 5rem;
     width: 100%;
     z-index: 6;
     display: grid;
@@ -180,25 +188,176 @@ a:hover {
     justify-content: center;
     justify-items: center;
     color: rgb(0, 0, 0);
-   
-   
+
+
 }
-.biglogo{ 
-    
-    border: 20px solid black;
-    font-size: 280px;
+
+.biglogo {
+
+    border: 2rem solid black;
+    font-size: 20rem;
+    margin-bottom: 4rem;
 }
-.intro-item{
-   
-    border: 10px solid #2c3e50;
+
+.intro-item {
+
+    border: 1rem solid #2c3e50;
 }
-.umax{
-    font-size:180px ;
+
+.umax {
+    font-size: 15.2rem;
 }
-.cc{
-    font-size: 60px;
+
+.cc {
+    font-size: 5rem;
 }
-.extra{
-    font-size:40px ;
+
+.extra {
+    margin: 5rem;
+    font-size: 3rem;
     text-align: center;
+}
+
+
+
+/* about-section */
+
+
+.about-section {
+    /* height: 80rem; */
+    background-color: #402aea;
+    margin: 2rem;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+.about-text {
+    padding: 8rem;
+}
+
+.about-text h1 {
+    font-size: 8rem;
+}
+
+.about-text p {
+    font-size: 4rem;
+}
+
+.about-img img {
+    height: 60rem;
+    width: 80rem;
+}
+
+@media(max-width:1560px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
+@media(max-width:1300px) {
+    .about-section {
+        /* height: 85rem; */
+
+    }
+
+    .about-text {
+        padding: 6rem;
+    }
+
+    .about-text h1 {
+        font-size: 7rem;
+    }
+
+    .about-text p {
+        font-size: 3.2rem;
+    }
+
+    .about-img img {
+        height: 50rem;
+        width: 60rem;
+    }
+}
+
+@media(max-width:900px) {
+    .about-section {
+
+
+
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about-text {
+        padding: 5rem;
+    }
+
+    .about-text h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .about-img img {
+        height: 50rem;
+        width: 60rem;
+    }
+
+    .about-img {
+        grid-row: 1/2;
+    }
+}
+
+@media(max-width:600px) {
+
+    .about-img img {
+        height: 30rem;
+        width: 40rem;
+    }
+
+    .about-section {
+        /* height: 80rem; */
+        background-color: #402aea;
+        margin: 0rem;
+        margin-top: 4rem;
+
+    }
+}
+@media(max-width:800px){
+    .about-text h1 {
+        text-align: center;
+        font-size: 8rem;
+    }
+    .about-img img {
+        height: 25rem;
+        width: 35rem;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+}
+
+
+/* *********COURSES******** */
+
+.course-section {
+    border: 2rem solid black;
 }
