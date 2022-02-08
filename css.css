@@ -255,7 +255,6 @@ a:hover {
     
 }
 
-
 /* about-section */
 
 
@@ -621,5 +620,16 @@ a:hover {
         grid-template-columns: 1fr;
 
     }
+}
+@media(max-width:380px){
+    .umax {
+        margin-top: -7rem;
+        font-size:20rem ;
+    }
+    .extra {
+        padding-top: 5rem;
+      font-size: 3.5rem;
+    } 
+    
 }
 
