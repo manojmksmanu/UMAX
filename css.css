@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 
-    background:linear-gradient(to left,#000000,#434343), url(https://images.pexels.com/photos/159760/computer-pc-workplace-home-office-159760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background:url(images/nice.jpg);
     
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ body {
 /*  %%%%%%%%%%% full responsive header%%%%%%%%%%  */
 nav {
     z-index: 10;
-    background: linear-gradient(to bottom right,#000000,#434343);
+    background: linear-gradient(to bottom right,#3C3B3F,#605C3C);
     height: 7rem;
     width: 100%;
 }
@@ -302,20 +302,37 @@ a:hover {
 
 .course-section {
 
-    background-color: #402aea;
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     margin-left: 2rem;
     margin-right: 2rem;
+    color: white;
+    
+}
+.course-item h3{
+    font-size: 5rem;
 }
 
 .course-item {
     padding: 5rem;
-    background-color: #1b9bff;
+    background:linear-gradient(#36D1DC,#5B86E5)  ;
+
     margin: 2rem;
 }
-
-
+.heading{
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px solid black;
+    font-size: 5rem;
+}
+@media(max-width:800px){
+    .heading {  font-size: 3rem;
+    }
+}
 
 
 /* contact us */
@@ -327,7 +344,7 @@ a:hover {
     align-content: center;
     justify-items: center;
     align-items: center;
-    background:linear-gradient( to bottom right ,#4b6cb7,#182848);
+    background:linear-gradient( to bottom right ,#43C6AC,#191654);
     padding: 4rem;
     color: white;
 }
@@ -458,7 +475,7 @@ a:hover {
     .map-iframe {
         width: 50rem;
         height: 40rem;
-        background-color: #2193b0;
+       
     }
     .contact-mail {
         margin-top: 2rem;
@@ -475,7 +492,7 @@ a:hover {
         align-content: center;
         justify-items: center;
         align-items: center;
-        background-color: aqua;
+        
 
     }
     
@@ -568,7 +585,7 @@ a:hover {
 @media(max-width:1200px) {
     .course-section {
         margin-top: 2rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
 
     }
    
@@ -579,7 +596,7 @@ a:hover {
 @media(max-width:800px) {
     .course-section {
 
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr  ;
 
     }
 }
@@ -592,23 +609,17 @@ a:hover {
 
     .course-section {
 
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
 
     }
 }
 
-@media(max-width:340px) {
-    .course-section {
 
-        grid-template-columns: 1fr;
-
-    }
-}
 
 @media(max-width:1200px) {
     .course-section {
         margin-top: 2rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
 
     }
 
@@ -619,7 +630,7 @@ a:hover {
 @media(max-width:800px) {
     .course-section {
 
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
     }
 }
@@ -632,7 +643,7 @@ a:hover {
 
     .course-section {
 
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
 
     }
 }
